@@ -24,13 +24,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot-desktop.png)
+![](./screenshot-mobile1.png)
+![](./screenshot-mobile2.png)
 
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: https://rsmith484.github.io/Four-card-feature-section/
 
 ## My process
 
