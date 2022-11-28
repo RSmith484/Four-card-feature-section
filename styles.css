@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* -- Variables -- */
+
+:root {
+    /* -- Card Colors -- */
+    --card-1: hsl(180, 62%, 55%);
+    --card-2: hsl(0, 78%, 62%);
+    --card-3: hsl(34, 97%, 64%);
+    --card-4: hsl(212, 86%, 64%);
+    
+    /* -- Font Colors -- */
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);    
+}
+
+/* -- CSS Reset -- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- Global Styles -- */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.5;
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 80%;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+/* -- Header -- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 3px 50px;
+}
+
+.title {
+    color: var(--GrayishBlue);
+    font-weight: 200;
+    text-align: center;
+}
+
+.sub-title {
+    color: var(--VeryDarkBlue);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+p {
+    color: var(--GrayishBlue);
+    text-align: center;
+}
+
+/* -- Cards -- */
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid var(--VeryLightGray);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;;
+    margin-bottom: 20px;
+    padding: 20px;
+    height: 200px
+}
+
+h2 {
+    color: var(--VeryDarkBlue);
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.card img {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+.card-1 {
+    border-top: 4px solid var(--card-1);
+}
+
+.card-2 {
+    border-top: 4px solid var(--card-2);
+}
+
+.card-3 {
+    border-top: 4px solid var(--card-3);
+}
+
+.card-4 {
+    border-top: 4px solid var(--card-4);
+}
+
+@media screen and (min-width: 768px){
+    header {
+        text-align: center;
+    }
+
+    header p {
+        padding-left: 250px;
+        padding-right: 250px; 
+    }
+    
+    .container {
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+
+    .card-1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        align-self: center;
+    }
+
+    .card-2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .card-3 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .card-4 {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        align-self: center;
+    }
+    
+}
