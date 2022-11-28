@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://github.com/RSmith484/Four-card-feature-section.git
 - Live Site URL: https://rsmith484.github.io/Four-card-feature-section/
 
 ## My process
